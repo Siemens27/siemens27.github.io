@@ -1,0 +1,25 @@
+@function rem($px)
+	@return $px / 16px + 0rem
+
+=s
+	@media screen and (max-width: $s)
+		@content
+=m
+	@media screen and (max-width: $m)
+		@content
+=l
+	@media screen and (max-width: $l)
+		@content
+=xl
+	@media screen and (max-width: $xl)
+		@content
+
+=keyframes($name)
+	@-webkit-keyframes #{$name}
+		@content
+	@-moz-keyframes #{$name}
+		@content
+	@-ms-keyframes #{$name}
+		@content
+	@keyframes #{$name}
+		@content

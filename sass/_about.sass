@@ -1,0 +1,180 @@
+section.about
+	padding: rem(50px) 0
+	padding: 4em 0
+	position: relative
+
+	div.bg-plane 
+
+		display: none
+
+		img 
+			width: 100%	
+
+		+m 
+			display: inline-block
+			position: fixed
+			left: -48px
+			top: 30%
+			z-index: 0
+			width: rem(100px)
+
+
+	div.bg-circle
+		position: absolute
+		width: 400px
+		height: 400px
+		background: transparent
+		border-radius: 50%
+		z-index: -1
+
+		&.top
+			width: 400px
+			height: 400px
+			border: 60px solid #fdc300 //yellow
+			top: 20%
+			left: -250px
+
+			+m 
+				left: -300px
+
+		&.bottom 
+
+			width: 500px
+			height: 500px
+			border: 55px solid #049588 //green
+			bottom: 10%
+			right: -360px
+
+			+m 
+				bottom: 10%
+				right: -450px
+
+
+
+
+	div.content
+		margin-top: rem(50px)
+		background: url('../files/imgs/icons/truck-icon.svg'), url('../files/imgs/icons/road_texture.png')
+		background-position: 15% 30%, 15% 30%
+		background-attachment: fixed, scroll
+		background-repeat: no-repeat, repeat-y
+		background-size: rem(150px), rem(150px)
+		padding-top: rem(80px)
+		padding-left: 35%
+		padding-bottom: rem(100px)
+
+		+m 	
+			background-position: -100% -100%, -48px 0%
+			background-size: rem(100px)
+			padding-left: 17%
+			background-attachment: initial !important, scroll
+
+		div.about-us-block
+			margin-right: 15%
+			font-size: 1.5em
+			line-height: 1.6em
+			color: white
+			background: #151515 //black
+			padding: rem(60px) rem(50px)
+			border-radius: 8px
+			font-weight: bold
+			margin-bottom: rem(100px)
+
+			+l 
+				margin-right: 0
+
+			+m
+				font-size: 1.1em
+				padding: rem(20px) rem(15px)
+
+			.accent
+
+				&.red
+					color: #E64C3C //red
+				&.yellow
+					color: #E5C649 //yellow
+				&.green
+					color: #01AA9B //green
+
+		div.features
+			display: flex
+			flex-direction: column
+
+			h2 
+				margin-bottom: rem(30px)
+				margin-top: rem(40px)
+
+			.feature-item
+				display: flex
+				margin: rem(30px) 0
+				align-content: center
+				cursor: pointer
+
+
+				img 
+					position: relative
+
+					&.speed-arrow 
+						display: inline-block
+						width: 100%
+						height: 36px 
+						position: absolute
+						bottom: 10px
+						left: 0
+						transform: rotate(-90deg)
+						transform-origin: 48% 50%
+
+					&.quality-anim
+						transform: scale(1)
+
+
+				+keyframes(flash)
+					0%
+						opacity: 0 
+					50% 
+						opacity: 1
+					100%
+						opacity: 0
+
+
+
+
+						
+				.left 
+					width: 100px
+					margin-right: rem(20px)
+					position: relative
+
+					img 
+						width: 100%
+
+				.right 
+
+					display: flex
+					flex-direction: column
+					justify-content: center
+
+					.heading
+						font-weight: bold
+						font-size: 1.2em
+						margin-bottom: rem(10px)
+
+					.feature-info
+						color: #6F6F6F
+
+				&:hover 
+					img 
+						&.speed-arrow 
+							transform: rotate(0)
+
+						&.flash-anim 
+							animation: flash .2s
+						&.quality-anim
+							transform: scale(1.1)
+
+
+
+
+
+
+

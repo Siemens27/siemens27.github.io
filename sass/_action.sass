@@ -1,0 +1,32 @@
+section.action
+	color: white
+	padding: rem(60px)
+
+
+
+	background:  url('../files/imgs/icons/truck-icon.svg'), url('../files/imgs/icons/road_texture.png')
+	background-color: #049588 //green
+	background-position: 15% 30%, 15% 30%
+	background-attachment: fixed, scroll
+	background-repeat: no-repeat, repeat-y
+	background-size: rem(150px), rem(150px)
+
+	+m 	
+		background-position: -100% -100%, -48px 0%
+		background-size: rem(100px)
+
+	h2
+		text-align: center
+		cursor: pointer
+
+		+l 
+			margin-left: 25%
+
+		+m 	
+			margin-left: 0
+
+		&.title
+			margin-bottom: rem(30px)
+		
+		&.number 
+			text-decoration: underline

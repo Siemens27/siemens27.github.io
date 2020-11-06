@@ -1,0 +1,61 @@
+section.reviews 
+	background: #F1F8FF //light blue
+	padding: rem(70px) 0
+	position: relative
+	z-index: 1
+
+	.review-items
+		margin-top: rem(100px)
+		display: flex
+
+		+m 	
+			flex-wrap: wrap
+
+		.review-item 	
+				
+			flex: 1 1 50%				
+			background: white
+			box-shadow: 6px 7px 20px 0px rgba(0, 0, 0, .2)
+			border-radius: 7px
+			padding: rem(50px)
+			margin: 0 rem(30px)
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+
+			&:hover 
+				box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, .2)
+
+
+			+l 	
+				padding: rem(20px)
+			+m 	
+				flex: 1 1 100%
+				margin: rem(40px) 0
+				padding: rem(40px)
+
+			p.review-text	
+				color:  #171717 //black
+				margin-bottom: rem(30px)
+
+			.author-info
+
+				display: flex
+				align-items: center
+
+				.left
+					width: 70px
+					height: 60px
+					display: flex
+					flex-direction: column 
+					justify-content: center
+					margin-right: rem(20px)
+
+					img 
+						max-width: 80%
+
+
+				.right
+
+				small
+					color: #838383 //grey

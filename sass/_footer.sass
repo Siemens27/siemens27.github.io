@@ -1,0 +1,71 @@
+footer 
+	background-color: #F9F9F9 //grey
+	color: #838383
+	position: relative
+
+	
+	div.footer-columns 	
+		padding: rem(80px) 0
+
+		display: flex
+		justify-content: space-around
+
+		+m 	
+			flex-wrap: wrap
+
+
+		.col
+			+m 	
+				flex: 1 1 100%
+				margin-bottom: rem(45px)
+				text-align: center
+
+				&:last-child 
+					margin-bottom: 0
+
+			h3 	
+				color: #707070
+				margin-bottom: rem(40px)
+
+				+m 	
+					margin-bottom: rem(20px)
+
+			ul 
+				li 
+					margin: rem(15px) 0
+					margin-left: rem(10px)
+					text-transform: lowercase
+
+		.col-3
+
+			li
+				img 
+					width: 20px
+					vertical-align: -4px
+					margin-right: rem(10px)
+				
+
+
+
+	div.citrus
+		display: flex
+		background-color: white
+		color: #6F6F6F //dark
+		padding: rem(15px)
+		justify-content: center
+		align-items: center
+
+
+		p
+			margin-right: rem(20px)
+
+
+		div.citrus-logo
+			display: flex
+			align-items: center
+
+
+			img 	
+				width: 35px
+				height: 35px
+				margin-right: rem(5px)
